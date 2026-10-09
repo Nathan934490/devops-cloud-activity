@@ -18,8 +18,10 @@ jobs:
  exit 1 
  fi 
  - name: Check System Status Feature 
- run: | 
- grep -q "System Status" index.html 
- - name: CI Successful 
- run: | 
- echo "Application passed automated CI checks." 
+ - name: Check System Status Feature
+      run: |                         # <-- Mali: Nasa parehong linya ang command
+      grep -q "System Status" index.html
+
+    - name: CI Successful
+      run: |                         # <-- Mali: Nasa parehong linya ang command
+      echo "Application passed automated CI checks."
